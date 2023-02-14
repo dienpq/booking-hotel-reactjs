@@ -18,7 +18,7 @@ const Header = () => {
     };
     return (
         <AppBar position="fixed" color='inherit' className={styles.boxHeader}>
-            <Container fixed>
+            <Container maxWidth='xl'>
                 <Grid container spacing={2}>
                     <Grid item xs={5} className={styles.headerLeft}>
                         <Toolbar>
@@ -75,6 +75,13 @@ const Header = () => {
                     </Grid>
                 </Grid>
             </Container>
+            <Box bgcolor='#e0e0e0' height='30px' display='flex' alignItems='center'>
+                <Container fixed>
+                    <Typography className={styles.marquee}>
+                        <p>jagsdkjahgdkjashgdkjshgdkjahgdajhsgdkashjgdkjh</p>
+                    </Typography>
+                </Container>
+            </Box>
         </AppBar>
     );
 };

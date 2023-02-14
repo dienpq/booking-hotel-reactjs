@@ -6,9 +6,9 @@ import styles from './Home.module.scss';
 
 function Home() {
     return (
-        <Box sx={{ mt: '50px' }} position='relative'>
+        <Box position='relative'>
             <div className={styles.boxBanner}>
-                <img src={Banner} className={styles.banner} />
+                <img src={Banner} className={styles.banner} alt='Banner Home' />
             </div>
             <SearchRoom />
         </Box>
