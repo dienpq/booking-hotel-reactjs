@@ -13,7 +13,7 @@ import dayjs from 'dayjs';
 import { useState } from 'react';
 import QuantityForm from '../QuantityForm';
 
-function SearchRoom(props) {
+function SearchHotel(props) {
     const [value, setValue] = useState(dayjs('2014-08-18T21:11:54'));
 
     const handleChange = (newValue) => {
@@ -25,7 +25,7 @@ function SearchRoom(props) {
             position='absolute'
             top='400px'
             left='50%'
-            width='600px'
+            width='800px'
             boxShadow='0 .5rem 1rem rgba(0,0,0,.15)'
             sx={{ background: '#fff', transform: 'translate(-50%, -50%)', borderRadius: '8px' }}
         >
@@ -72,7 +72,7 @@ function SearchRoom(props) {
                         />
                     </LocalizationProvider>
                 </Grid>
-                <Grid item xs={7}>
+                <Grid item xs={8}>
                     <TextField
                         id="outlined-select-currency"
                         select
@@ -109,7 +109,7 @@ function SearchRoom(props) {
                         </Box>
                     </TextField>
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={4}>
                     <Button variant='contained' sx={{ width: '100%', height: '100%' }}>
                         <SearchIcon />
                         <Typography>TÌm khách sạn</Typography>
@@ -120,4 +120,4 @@ function SearchRoom(props) {
     );
 }
 
-export default SearchRoom;
+export default SearchHotel;

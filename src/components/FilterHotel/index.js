@@ -1,6 +1,6 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import StarIcon from '@mui/icons-material/Star';
-import { Accordion, AccordionDetails, AccordionSummary, Button, Checkbox, Divider, FormControl, FormControlLabel, FormGroup, Link, OutlinedInput, Paper, Radio, RadioGroup, Rating, Slider, Stack, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Checkbox, Divider, FormControl, FormControlLabel, FormGroup, Link, OutlinedInput, Paper, Radio, RadioGroup, Slider, Stack, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 
@@ -105,15 +105,17 @@ function FilterHotel(props) {
                             <FormGroup>
                                 <FormControlLabel
                                     control={<Checkbox defaultChecked size="small" />}
-                                    label={<StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />}
+                                    label={<Box marginTop='4px'>
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                    </Box>}
                                 />
                             </FormGroup>
                             <FormGroup>
                                 <FormControlLabel
                                     control={<Checkbox defaultChecked size="small" />}
-                                    label={<Box>
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
+                                    label={<Box marginTop='4px'>
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
                                     </Box>
                                     }
                                 />
@@ -121,10 +123,10 @@ function FilterHotel(props) {
                             <FormGroup>
                                 <FormControlLabel
                                     control={<Checkbox defaultChecked size="small" />}
-                                    label={<Box>
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
+                                    label={<Box marginTop='4px'>
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
                                     </Box>
                                     }
                                 />
@@ -132,11 +134,11 @@ function FilterHotel(props) {
                             <FormGroup>
                                 <FormControlLabel
                                     control={<Checkbox defaultChecked size="small" />}
-                                    label={<Box>
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
+                                    label={<Box marginTop='4px'>
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
                                     </Box>
                                     }
                                 />
@@ -144,12 +146,12 @@ function FilterHotel(props) {
                             <FormGroup>
                                 <FormControlLabel
                                     control={<Checkbox defaultChecked size="small" />}
-                                    label={<Box>
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
-                                        <StarIcon sx={{ marginTop: '4px', color: '#fdd835' }} />
+                                    label={<Box marginTop='4px'>
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
+                                        <StarIcon sx={{ color: '#fdd835' }} />
                                     </Box>
                                     }
                                 />
