@@ -53,15 +53,15 @@ function SwiperComment(props) {
                                 }}
                             >
                                 <Stack direction='column' justifyContent='space-between' height='100%'>
-                                    <Box padding='1rem 1rem 0 1rem'>
+                                    <Box padding='1.5rem 1.5rem 0 1.5rem'>
                                         <Typography
                                             variant="body2"
-                                            className='text-ellipsis-4'
+                                            className='text-ellipsis-3'
                                         >
                                             {comment.description}
                                         </Typography>
                                     </Box>
-                                    <Box padding='0 1rem 1rem 1rem' display='flex' alignItems='center'>
+                                    <Box padding='0 1.5rem 1rem 1.5rem' display='flex' alignItems='center'>
                                         <PersonIcon />
                                         <Typography marginTop='4px'>
                                             {comment.name}
