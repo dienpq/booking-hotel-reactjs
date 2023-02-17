@@ -22,23 +22,17 @@ function CarouselBanner() {
         }
     ]
     return (
-        <Carousel
-            navButtonsProps={{
-                style: {
-                    borderRadius: 50
-                }
-            }}
-            indicatorContainerProps={{
-                style: {
-                    display: 'none'
-                }
-
-            }}
-        >
+        <Carousel indicators={false}>
             {
-                imgBanner.map((imgBannerItem, i) => <Box key={i} bgcolor='red' width='100%' height='500px' overflow='hidden'>
-                    <img src={imgBannerItem.path} width='100%' alt='Banner Hotel' />
-                </Box>)
+                imgBanner.map((imgBannerItem, i) => <Box
+                    component='img'
+                    src={imgBannerItem.path}
+                    key={i}
+                    bgcolor='red'
+                    width='100%'
+                    height='500px'
+                    sx={{ objectFit: 'cover' }}
+                />)
             }
         </Carousel >
     );

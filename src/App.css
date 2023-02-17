@@ -1,3 +1,11 @@
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
 }
+
+.text-ellipsis-4 {
+    display: -webkit-box;
+  	-webkit-line-clamp: 4;
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}

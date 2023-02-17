@@ -22,7 +22,7 @@ function FilterHotel(props) {
                     <FormControl>
                         <RadioGroup
                             aria-labelledby="radio-buttons-group-label"
-                            defaultValue="nearest"
+                            defaultValue="popularity"
                             name="radio-buttons-group"
                         >
                             <FormControlLabel value="highest" control={<Radio size="small" />} label="Giá cao nhất" />
@@ -51,7 +51,7 @@ function FilterHotel(props) {
                         </AccordionSummary>
                         <AccordionDetails sx={{ padding: '0 1rem 1rem 1rem' }}>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox defaultChecked />} label="Miến phí hủy phòng" />
+                                <FormControlLabel control={<Checkbox />} label="Miễn phí hủy phòng" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -104,7 +104,7 @@ function FilterHotel(props) {
                         <AccordionDetails sx={{ padding: '0 1rem 1rem 1rem' }}>
                             <FormGroup>
                                 <FormControlLabel
-                                    control={<Checkbox defaultChecked size="small" />}
+                                    control={<Checkbox size="small" />}
                                     label={<Box marginTop='4px'>
                                         <StarIcon sx={{ color: '#fdd835' }} />
                                     </Box>}
@@ -112,7 +112,7 @@ function FilterHotel(props) {
                             </FormGroup>
                             <FormGroup>
                                 <FormControlLabel
-                                    control={<Checkbox defaultChecked size="small" />}
+                                    control={<Checkbox size="small" />}
                                     label={<Box marginTop='4px'>
                                         <StarIcon sx={{ color: '#fdd835' }} />
                                         <StarIcon sx={{ color: '#fdd835' }} />
@@ -122,7 +122,7 @@ function FilterHotel(props) {
                             </FormGroup>
                             <FormGroup>
                                 <FormControlLabel
-                                    control={<Checkbox defaultChecked size="small" />}
+                                    control={<Checkbox size="small" />}
                                     label={<Box marginTop='4px'>
                                         <StarIcon sx={{ color: '#fdd835' }} />
                                         <StarIcon sx={{ color: '#fdd835' }} />
@@ -133,7 +133,7 @@ function FilterHotel(props) {
                             </FormGroup>
                             <FormGroup>
                                 <FormControlLabel
-                                    control={<Checkbox defaultChecked size="small" />}
+                                    control={<Checkbox size="small" />}
                                     label={<Box marginTop='4px'>
                                         <StarIcon sx={{ color: '#fdd835' }} />
                                         <StarIcon sx={{ color: '#fdd835' }} />
@@ -145,7 +145,7 @@ function FilterHotel(props) {
                             </FormGroup>
                             <FormGroup>
                                 <FormControlLabel
-                                    control={<Checkbox defaultChecked size="small" />}
+                                    control={<Checkbox size="small" />}
                                     label={<Box marginTop='4px'>
                                         <StarIcon sx={{ color: '#fdd835' }} />
                                         <StarIcon sx={{ color: '#fdd835' }} />
@@ -182,18 +182,16 @@ function FilterHotel(props) {
                             <Typography fontWeight='600'>Ưu tiên nơi nghỉ</Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ padding: '0 1rem 1rem 1rem' }}>
-                            <FormGroup>
-                                <FormControlLabel
-                                    control={<Checkbox defaultChecked size="small" />}
-                                    label='All'
-                                />
-                            </FormGroup>
-                            <FormGroup>
-                                <FormControlLabel
-                                    control={<Checkbox size="small" />}
-                                    label='Vip'
-                                />
-                            </FormGroup>
+                            <FormControl>
+                                <RadioGroup
+                                    aria-labelledby="radio-buttons-group-label"
+                                    defaultValue="all"
+                                    name="radio-buttons-group"
+                                >
+                                    <FormControlLabel value="all" control={<Radio size="small" />} label="All" />
+                                    <FormControlLabel value="vip" control={<Radio size="small" />} label="Vip" />
+                                </RadioGroup>
+                            </FormControl>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion elevation={0} expanded disableGutters={true} >
