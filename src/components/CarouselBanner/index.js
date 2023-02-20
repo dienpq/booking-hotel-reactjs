@@ -28,7 +28,6 @@ function CarouselBanner() {
                     component='img'
                     src={imgBannerItem.path}
                     key={i}
-                    bgcolor='red'
                     width='100%'
                     height='500px'
                     sx={{ objectFit: 'cover' }}

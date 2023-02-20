@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardMedia, Chip, Divider, Typography } f
 import { Box, Stack } from '@mui/system';
 import StarIcon from '@mui/icons-material/Star';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import PersonIcon from '@mui/icons-material/Person';
 import banner from '../../assets/banner.png'
+import ChipConvenient from '../ChipConvenient';
 
 function CardHotel() {
     return (
@@ -15,7 +15,7 @@ function CardHotel() {
                 boxShadow: 'rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px'
             }
         }}>
-            <Box overflow='hidden' width='200px' bgcolor='red'>
+            <Box overflow='hidden' width='200px'>
                 <CardMedia
                     component="img"
                     image={banner}
@@ -45,34 +45,20 @@ function CardHotel() {
                             </Box>
                         </Box>
                         <Box>
-                            <Chip
-                                label={<Box display='flex' alignItems='center'>
-                                    <AutoAwesomeIcon sx={{ fontSize: '14px' }} />
-                                    <Typography variant="caption" marginTop='2px' marginLeft='4px'>
-                                        Miễn phí hủy phòng
-                                    </Typography>
-                                </Box>}
-                                sx={{
-                                    bgcolor: '#b9f6ca',
-                                    color: '#00c853',
-                                    fontWeight: '700',
-                                    height: 'auto',
-                                    padding: '2px'
-                                }}
-                            />
+                            <ChipConvenient />
                         </Box>
                     </Stack>
                     <Divider sx={{ position: 'absolute', top: 0, right: 'calc(250px + 0.5rem)' }} orientation="vertical" />
                     <Stack direction='column' justifyContent='space-between' width='250px' marginLeft='1rem'>
                         <Box display='flex' alignItems='center'>
-                            <PersonIcon sx={{ color: '#00c853' }} />
-                            <Typography variant='body2' color='#00c853' marginTop='4px'>
+                            <PersonIcon sx={{ color: '#4caf50' }} />
+                            <Typography variant='body2' color='#4caf50' marginTop='4px'>
                                 Ưu đãi thành viên
                             </Typography>
                         </Box>
                         <Box>
                             <Typography variant='subtitle2' color='#1976d2'>
-                                Thanh toán khi nhận phòng có card akshkshk
+                                Thanh toán khi nhận phòng có card
                             </Typography>
                             <Typography variant='subtitle2' color='#757575' sx={{ textDecoration: 'line-through' }}>
                                 1.000.000<span>&#8363;</span>

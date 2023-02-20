@@ -1,6 +1,7 @@
 import { Box, Button, Container, Divider } from '@mui/material';
 import { Stack } from '@mui/system';
 import InfoHotelItem from '../../components/InfoHotelItem';
+import CardRoom from '../../components/CardRoom';
 
 function HotelItem(props) {
     return (
@@ -14,6 +15,11 @@ function HotelItem(props) {
             </Stack>
             <Divider sx={{ margin: '1rem 0' }} />
             <InfoHotelItem />
+
+            <Box marginTop='2rem'>
+                <Box children={<CardRoom />} marginTop='2rem' />
+                <Box children={<CardRoom />} marginTop='2rem' />
+            </Box>
         </Container>
     );
 }

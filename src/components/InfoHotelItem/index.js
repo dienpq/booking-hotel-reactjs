@@ -7,14 +7,7 @@ import ElevatorIcon from '../../assets/icon-elevator.png';
 import WifiIcon from '../../assets/icon-wifi.png';
 import ReceptionistIcon from '../../assets/icon-receptionist.png';
 import SwiperComment from '../SwiperComment';
-
-function srcset(image, size, rows = 1, cols = 1) {
-    return {
-        src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-        srcSet: `${image}?w=${size * cols}&h=${size * rows
-            }&fit=crop&auto=format&dpr=2 2x`,
-    };
-}
+import srcset from '../../common';
 
 function InfoHotelItem(props) {
     const itemData = [
@@ -67,10 +60,10 @@ function InfoHotelItem(props) {
                     </Box>
                 </Box>
                 <Stack textAlign='right' direction='column' justifyContent='end'>
-                    <Typography variant='subtitle2' fontWeight='600'>
-                        Giá phòng mỗi đêm
+                    <Typography variant='body1' fontWeight='600'>
+                        Giá phòng mỗi đêm từ
                     </Typography>
-                    <Typography variant='h4' fontWeight='700' color='#d81b60'>
+                    <Typography variant='h4' fontWeight='700' color='#d81b60' marginTop='4px'>
                         714.025 <span>&#8363;</span>
                     </Typography>
                     <Button
@@ -82,7 +75,9 @@ function InfoHotelItem(props) {
                                 bgcolor: '#c2185b'
                             }
                         }}
-                    >Đặt phòng</Button>
+                    >
+                        Đặt phòng
+                    </Button>
                 </Stack>
             </Stack>
 
