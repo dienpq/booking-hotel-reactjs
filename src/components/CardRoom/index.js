@@ -11,6 +11,7 @@ import SmokeFreeIcon from '@mui/icons-material/SmokeFree';
 import HelpIcon from '@mui/icons-material/Help';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import srcset from '../../common';
+import { Link } from 'react-router-dom';
 
 function CardRoom(props) {
     const itemData = [
@@ -188,17 +189,25 @@ function CardRoom(props) {
                                                     </Typography>
                                                 </Box>
 
-                                                <Button
-                                                    variant='contained'
-                                                    sx={{
-                                                        bgcolor: '#d81b60',
-                                                        '&:hover': {
-                                                            bgcolor: '#c2185b'
-                                                        }
-                                                    }}
+                                                <Link
+                                                    className='text-decoration-none'
+                                                    to='/hotel/1/room/1/booking'
+                                                    children={
+                                                        <Button
+                                                            variant='contained'
+                                                            sx={{
+                                                                bgcolor: '#d81b60',
+                                                                '&:hover': {
+                                                                    bgcolor: '#c2185b'
+                                                                },
+                                                            }}
+                                                        >
+                                                            Đặt ngay
+                                                        </Button>
+                                                    }
                                                 >
-                                                    Đặt ngay
-                                                </Button>
+                                                </Link>
+
                                             </Stack>
                                         </Grid>
                                     </Grid>
